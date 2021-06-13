@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import '../../public/css/styleseet.css'
+import '../css/app.css'
 import 'slick-carousel'
 import 'slick-carousel/slick/slick.css';
 $('.topslide').slick({
