@@ -20,22 +20,28 @@
     font-size:18px;
     color :#fff;
     border-radius: 22px;
+    @media screen and (max-width: 1000px){
+        width:40%;
+    }
+    @media screen and (max-width: 700px){
+        width:100%;
+    }
 }
 .list1{
     background-image: url(../image/fruittree.jpg);
-    background-size:100% auto;
+    background-size:150% auto;
 }
 .list2{
     background-image: url(../image/leafyvegetables.jpg);
-    background-size:100% auto;
+    background-size:150% auto;
 }
 .list3{
     background-image: url(../image/rootvegetables.jpg);
-    background-size:100% auto;
+    background-size:150% auto;
 }
 .list4{
     background-image: url(../image/fruitvegetables.jpg);
-    background-size:100% auto;
+    background-size:150% auto;
 }
 .tab-content{
     display:none;
@@ -45,6 +51,9 @@
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    @media screen and (max-width: 1000px){
+        border-radius: 30px;  
+    }
 }
 .content2{
     border:solid 1px #2a9f6b;
@@ -59,9 +68,11 @@
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    @media screen and (max-width: 1000px){
+        border-radius: 30px;  
+    }
 }
 .on-tab-menu{
-    width: 15%;
     padding: 15px 30px 20px;
     margin-bottom:0px;
     font-size:18px;
@@ -70,6 +81,12 @@
     border-top-left-radius: 22px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    @media screen and (max-width: 1000px){
+        padding: 15px 30px;
+        margin-bottom:20px;
+        border-radius: 22px;
+        font-size:25px;
+    }
 }
 .on-tab-content{
     display: flex;
@@ -82,9 +99,17 @@
     width: 20%;
     display: inline-block;
     padding: 40px 0px;
+    @media screen and (max-width: 1000px){
+        width:35%;
+    }
+    @media screen and (max-width: 700px){
+        padding-top:80px;
+        width:80%;
+    }
 }
 .menuーimg{
     width: 100%;
+    text-align: center;
 }
 .menuーimg img{
     width: 100%;
