@@ -12167,7 +12167,20 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menuslide').slick({
   responsive: [{
     breakpoint: 896,
     settings: {
-      slidesToShow: 3
+      slidesToShow: 3,
+      centerPadding: '10%'
+    }
+  }, {
+    breakpoint: 500,
+    settings: {
+      slidesToShow: 2,
+      centerPadding: '10%'
+    }
+  }, {
+    breakpoint: 400,
+    settings: {
+      slidesToShow: 1,
+      centerPadding: '20%'
     }
   }]
 }); //menuバー
