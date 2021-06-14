@@ -21,7 +21,7 @@
     color :#fff;
     border-radius: 22px;
     @media screen and (max-width: 1000px){
-        width:40%;
+        width:10%;
     }
     @media screen and (max-width: 700px){
         width:100%;
@@ -51,7 +51,7 @@
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width:700px){
         border-radius: 30px;  
     }
 }
@@ -68,7 +68,7 @@
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 700px){
         border-radius: 30px;  
     }
 }
@@ -81,8 +81,8 @@
     border-top-left-radius: 22px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    @media screen and (max-width: 1000px){
-        padding: 15px 30px;
+    @media screen and (max-width: 700px){
+        padding: 40px 40px;
         margin-bottom:20px;
         border-radius: 22px;
         font-size:25px;
@@ -120,14 +120,36 @@
     display: block;
     margin: 0 auto;
     text-align: center;
-}
-.menu-title a{
-    font-size: 15px;
-    padding-top: 20px;
-    text-align: center;
-    line-height: 200%;
-    text-decoration: none;
-    color:#000;
+    & a {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        font-size: 15px;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 200%;
+        text-decoration: none;
+        color:#000;
+        &:hover{
+            transition-duration: 0.5s;
+            opacity: 0.5;
+            &::after{
+                transform: scale(1, 1);
+            }
+        }
+        &:after{
+             position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #2d9968;
+        transform: translate(-100%, 0);
+        transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+        content: "";
+        }
+    }
 }
 .slide-title{
     font-size: 20px;
