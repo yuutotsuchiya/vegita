@@ -124,13 +124,30 @@ main{
     height:auto;
     padding-bottom:30px;
     }
+    @media screen and (max-width: 500px){
+    padding:0 20px;
+    }
 }
-.footer-title img{
+.footer-title{
+    @media screen and (max-width: 896px){
+        text-align:center;
+        padding:30px;
+    }
+    @media screen and (max-width: 500px){
+        & img{
+            padding:0px;
+            padding-top:30px;
+            height: auto;
+        }
+        padding:0px;
+    }
+    & img {
     width:150px;
     height: auto;
     &:hover{
         transition-duration: 0.5s;
         opacity: 0.6;
+        }
     }
 }
 .footer-column{
@@ -282,14 +299,6 @@ main{
     }
     .cart img{
     width: 35px;
-    }
-    .footer-title{
-        text-align:center;
-        padding:30px;
-    }
-    .footer-title img{
-    width:200px;
-    height: auto;
     }
     .footer-column{
         height:auto;
