@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    min-height:0;
+    min-width : 0;
+}
+
+@import "campaign.css";
+@import "company.css";
+@import "styleseet.css";
+@import "headerfooter.css";
+@import "menu.css";
+@import "moremenu.css";
+@import "slick.css";
+

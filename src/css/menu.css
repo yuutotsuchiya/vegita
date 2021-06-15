@@ -1,0 +1,198 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.tab{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 50px;
+    list-style:none;
+}
+.tab-menu{
+    width: 15%;
+    padding: 15px 30px;
+    margin-bottom:20px;
+    font-size:18px;
+    color :#fff;
+    border-radius: 22px;
+    @media screen and (max-width: 1000px){
+        width:10%;
+    }
+    @media screen and (max-width: 700px){
+        width:100%;
+    }
+}
+.list1{
+    background-image: url(../image/fruittree.jpg);
+    background-size:150% auto;
+}
+.list2{
+    background-image: url(../image/leafyvegetables.jpg);
+    background-size:150% auto;
+}
+.list3{
+    background-image: url(../image/rootvegetables.jpg);
+    background-size:150% auto;
+}
+.list4{
+    background-image: url(../image/fruitvegetables.jpg);
+    background-size:150% auto;
+}
+.tab-content{
+    display:none;
+}
+.content1{
+    border:solid 1px #efec53;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    @media screen and (max-width:700px){
+        border-radius: 30px;  
+    }
+}
+.content2{
+    border:solid 1px #2a9f6b;
+    border-radius: 30px;
+}
+.content3{
+    border:solid 1px #5e4423;
+    border-radius: 30px;
+}
+.content4{
+    border:solid 1px #a33230;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    @media screen and (max-width: 700px){
+        border-radius: 30px;  
+    }
+}
+.on-tab-menu{
+    padding: 15px 30px 20px;
+    margin-bottom:0px;
+    font-size:18px;
+    color :#fff;
+    border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    @media screen and (max-width: 700px){
+        padding: 40px 40px;
+        margin-bottom:20px;
+        border-radius: 22px;
+        font-size:25px;
+    }
+}
+.on-tab-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+.menu{
+    width: 20%;
+    display: inline-block;
+    padding: 40px 0px;
+    @media screen and (max-width: 1000px){
+        width:35%;
+    }
+    @media screen and (max-width: 700px){
+        padding-top:80px;
+        width:80%;
+    }
+}
+.menuーimg{
+    width: 100%;
+    text-align: center;
+}
+.menuーimg img{
+    width: 100%;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+.menu-title{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    & a {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        font-size: 15px;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 200%;
+        text-decoration: none;
+        color:#000;
+        &:hover{
+            transition-duration: 0.5s;
+            opacity: 0.5;
+            &::after{
+                transform: scale(1, 1);
+            }
+        }
+        &:after{
+             position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #2d9968;
+        transform: translate(-100%, 0);
+        transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+        content: "";
+        }
+    }
+}
+.slide-title{
+    font-size: 20px;
+    padding: 40px;
+    text-align: center;
+}
+.topslide{
+    padding-top:0px;
+    padding-bottom: 50px;
+    
+}
+.slide-item{
+    border-radius: 50px;
+}
+.slide-item img{
+    width: 94%;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+.slick-dots{
+    padding-top: 30px;
+    display: flex;
+    margin: 0 auto;
+    width: 180px;
+    text-align: center;
+}
+.slick-dots li{
+    list-style-type:none;
+}
+.slick-dots li button{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #2d9968;
+    border-radius: 20px;
+    content: '1';
+    text-align: center;
+    opacity: 1;
+    color: #2d9968;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: #fff;
+    background-color: #fff;
+}
